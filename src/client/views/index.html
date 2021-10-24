@@ -14,6 +14,7 @@
             <label for="article-url">URL</label>
             <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here" />
             <button
+              id="submitBtn"
               type="submit"
               class="btn-submit"
             >
@@ -33,14 +34,14 @@
         </section>
       </div>
     </main>
-    <script>
-      // Check that service workers are supported
-      if ('serviceWorker' in navigator) {
-        // Use the window load event to keep the page load performant
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
-        })
-      }
-    </script>
+<!--    <script>-->
+<!--      // Check that service workers are supported-->
+<!--      if ('serviceWorker' in navigator) {-->
+<!--        // Use the window load event to keep the page load performant-->
+<!--        window.addEventListener('load', () => {-->
+<!--          navigator.serviceWorker.register('/service-worker.js')-->
+<!--        })-->
+<!--      }-->
+<!--    </script>-->
   </body>
 </html>

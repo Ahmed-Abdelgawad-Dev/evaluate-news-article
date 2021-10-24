@@ -5,5 +5,4 @@ const useData = ({ data }) => {
     document.getElementById("irony").innerHTML = `Irony: ${data.irony}`;
     document.getElementById("score_tag").innerHTML = `Score Tag: ${data.score_tag}`;
   }
-
   module.exports = {useData}

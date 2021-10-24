@@ -1,4 +1,5 @@
 import './styles/style.scss'
+import {handleSubmit} from "./js/handleSubmit";
 
 // TODO: get the button for submit
 // TODO: add event listener to it when the click to call handleSubmit function
@@ -10,3 +11,16 @@ import './styles/style.scss'
  *      no
  *          show user message it's not valid URL
  */
+window.addEventListener('DOMContentLoaded', () => {
+    const submitButton = document.getElementById('submitBtn');
+    submitButton.addEventListener('click', handleSubmit);
+  })
+
+
+
+
+
+
+export {
+    handleSubmit,
+}

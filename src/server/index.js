@@ -11,8 +11,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static('dist'))
 app.use(cors());
 app.use(express.json());
-// TODO: Configure express to use body-parser as middle-ware.
-// express static directory.
 app.get('/', function (req, res) {
     // res.sendFile('dist/index.html')
     res.sendFile(path.resolve('dist/index.html'))
@@ -32,6 +30,7 @@ const apiPost = async (req, res) => {
   res.send(result);
 }
 app.post('/apiPost', apiPost)
+
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
@@ -44,14 +43,3 @@ app.listen(PORT, (error) => {
 
 // export app to use it in the unit testing
 module.exports = {app}
-/*
-    server sends only specified data to the client with below codes
-     const sample = {
-       text: '',
-       score_tag : '',
-       agreement : '',
-       subjectivity : '',
-       confidence : '',
-       irony : ''
-     }
-*/
