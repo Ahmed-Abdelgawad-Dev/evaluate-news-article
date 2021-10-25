@@ -1,5 +1,8 @@
 {
   "name": "evaluate-news-nlp",
+  "jest": {
+    "verbose": true
+  },
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,6 +16,7 @@
   "license": "MyOwn",
   "description": "Evaluating Article App using MeaningCloud API",
   "dependencies": {
+    "@jest/globals": "^27.3.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
