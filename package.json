@@ -10,8 +10,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "Ahmed Abdelgawad",
+  "description": "Evaluating Article App using MeaningCloud API",
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",

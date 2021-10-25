@@ -7,18 +7,12 @@ const { useData} = require("./useDate")
      const articleURL = document.getElementById("article-url");
      const {value} = articleURL
      if (checkURL(value)){
-       console.log("form submitted", value);
          const data = await fetchingData('http://localhost:8081/apiPost', { url: value });
-
          useData({data});
-
-
          }else{
-            alert('The Url you entered is not valid. Please try again');
+            alert('The Url you entered is not valid. Please enter a valid one!');
           }
      }
-
-
 export { handleSubmit }
 
 

@@ -1,17 +1,22 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const webpack = require('webpack')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     entry: "./src/client/index.js",
-	output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'dist')
-    },
+	// output: {
+    //     filename: 'index.js',
+    //     path: path.resolve(__dirname, 'dist')
+    // },
+    output: {
+    libraryTarget: 'var',
+    library: 'Client',
+  },
 	mode: "production",
     module: {
         rules: [
@@ -28,8 +33,8 @@ module.exports = {
         // workbox-webpack-plugin
         new WorkboxPlugin.GenerateSW()
     ],
-    optimization: {
-        // Optimization for JS and CSS
-        minimizer: [new TerserPlugin()],
-    }
+    optimization:
+        {// Optimization for JS and CSS
+        minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
+        }
 }
