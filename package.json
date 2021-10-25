@@ -9,8 +9,8 @@
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
   },
   "keywords": [],
-  "author": "",
-  "license": "Ahmed Abdelgawad",
+  "author": "Ahmed AbdelGawad",
+  "license": "MyOwn",
   "description": "Evaluating Article App using MeaningCloud API",
   "dependencies": {
     "axios": "^0.21.1",
