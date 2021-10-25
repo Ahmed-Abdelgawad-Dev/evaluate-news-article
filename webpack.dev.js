@@ -27,6 +27,5 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
-        // TODO: configure workbox-webpack-plugin
     ]
 }
