@@ -9,7 +9,8 @@ const fetchingData = async(url='', data={url:''}) => {
       },
       body: JSON.stringify(data)
     });
-    return await resp.json()
+     const newData = await resp.json();
+    return newData;
   } catch (error) {
     alert('Something went wrong, Please try again!');
 		console.log('Error =>', error)
