@@ -5,14 +5,15 @@
     <title>Evaluate My Article</title>
   </head>
   <body>
-  <header>This is the header</header>
+  <header>Evaluate News Article App</header>
     <main>
-      <div class="container">
-        <p>Enter a URL of an article | a blog to discover its sentiment.</p>
+      <div class="container"><br>
         <section>
           <form id="form">
-            <label for="article-url">URL</label>
-            <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here" />
+            <div>
+              <label for="article-url"></label>
+            <input id="article-url" type="text" name="input" value="" placeholder="Enter a URL to discover its sentiment" />
+            </div>
             <button
               id="submitBtn"
               type="submit"
@@ -22,18 +23,24 @@
             </button>
           </form>
         </section>
-
-        <section>
-          <strong>Form Results:</strong>
+        <h3><strong>Meaning Cloud API Results:</strong></h3>
+        <div id="results">
           <div id="text"></div>
           <div id="agreement"></div>
           <div id="subjectivity"></div>
           <div id="confidence"></div>
           <div id="irony"></div>
           <div id="score_tag"></div>
-        </section>
+        </div>
       </div>
     </main>
+  <footer>
+  <div>
+     &copy; Author: <a href="https://github.com/Ahmed-Abdelgawad-Dev" target="_blank"><span>Ahmed Abdelgawad</span></a> - 2021 <br>
+    Powered by
+    <a href="https://www.udacity.com/" target="_blank">Udacity</a>
+  </div>
+</footer>
   <script>
     // https://webpack.js.org/guides/progressive-web-application/#registering-our-service-worker
     if ('serviceWorker' in navigator) {
@@ -46,5 +53,5 @@
      });}
   </script>
   </body>
-<footer>This is the footer</footer>
+
 </html>

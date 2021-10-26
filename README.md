@@ -6,12 +6,13 @@ This project aims to build a web tool that allows users to run Natural Language 
 
 ## Build Tools
 * HTML
-* CSS
+* CSS  
+  * **Note:** Simple SCSS styling is used as the main goal of the app is working with WEBPACK.
 * JavaScript
 * Node
 * Express
 * Webpack
-* meaningcloud API
+* Meaning-cloud API
 * Jest
 * Workbox 
 
@@ -33,5 +34,6 @@ This project aims to build a web tool that allows users to run Natural Language 
 - `npm run start to run the Express server on port 8081`
 - `npm run build-dev to start the dev server`
 - `npm run build-prod to generate a dist folder for prod`
+- `npm run test to run all tests`
 
 **Note:** If server does not work because the port is used type  `pkill -9 node` then try to run the server again.

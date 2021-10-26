@@ -1,12 +1,8 @@
-// import {jest} from '@jest/globals';
-//
-// jest.useFakeTimers();
-
-
+import {jest} from '@jest/globals';
+jest.useFakeTimers();
 import {fetchingData} from "../src/client/js/fetchingData";
 
-describe('formHandler should exist', () => {
-	it('Test for the formHandler function', () => {
-		expect(fetchingData).toBeDefined();
-	});
+it('fetchingData test', async () => {
+  const result = await fetchingData();
+  expect(result).toBeDefined()
 });

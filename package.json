@@ -16,8 +16,10 @@
   "license": "MyOwn",
   "description": "Evaluating Article App using MeaningCloud API",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@jest/globals": "^27.3.1",
     "axios": "^0.21.1",
+    "babel-core": "^7.0.0-bridge.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -28,6 +30,8 @@
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",

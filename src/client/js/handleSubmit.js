@@ -2,7 +2,7 @@ import checkURL from "./checkURL";
 const { fetchingData } = require("./fetchingData");
 const { useData} = require("./useDate")
 
- const handleSubmit = async (e) => {
+ async function handleSubmit (e) {
      e.preventDefault();
      const articleURL = document.getElementById("article-url");
      const {value} = articleURL
