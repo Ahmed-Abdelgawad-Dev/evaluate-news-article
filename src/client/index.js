@@ -1,5 +1,5 @@
 import './styles/style.scss';
-import {handleSubmit} from "./js/handleSubmit";
+import handleSubmit from "./js/index";
 
 
 window.addEventListener('DOMContentLoaded', () => {
