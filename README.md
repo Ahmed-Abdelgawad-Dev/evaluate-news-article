@@ -25,6 +25,7 @@ This project aims to build a web tool that allows users to run Natural Language 
 
 * Fill the `.env` file with your API key like this:
     * MEANING_CLOUD_API_KEY= *****
+      * **Note** API key was left on the server terminal in purpose in case you want to try it rapidly. 
     * API_URL=https://api.meaningcloud.com/sentiment-2.1
 
 ### Start The Project

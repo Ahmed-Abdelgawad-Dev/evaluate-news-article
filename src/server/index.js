@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
 
 //Destructuring the environment variables
 const {MEANING_CLOUD_API_KEY, API_URL} = process.env
+console.log(' Use this key or your own =>   ',MEANING_CLOUD_API_KEY)
 // A function to use with posting.
 const apiPost = async (req, res) => {
   const { body: { url } } = req;
