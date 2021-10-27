@@ -26,7 +26,7 @@ module.exports = {
         new HtmlWebPackPlugin({template: './src/client/views/index.html', filename: './index.html'}),
         new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
         new CleanWebpackPlugin({dry: true, verbose: false, cleanStaleWebpackAssets: true, protectWebpackAssets: false}),
-        // workbox-webpack-plugin
+        //service worker plugin
         new WorkboxPlugin.GenerateSW()
     ],
     optimization:

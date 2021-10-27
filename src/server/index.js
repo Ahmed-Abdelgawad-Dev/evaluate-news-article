@@ -3,8 +3,8 @@ require('dotenv').config() // for environment variables
 const cors = require('cors') //cors to avoid cors-origin issue
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
-const bodyParser = require("body-parser");
-const axios = require('axios').default
+const bodyParser = require("body-parser"); //parser
+const axios = require('axios').default // axios to deal with node server
 
 //choosing whatever port we want.
 const PORT = 8081

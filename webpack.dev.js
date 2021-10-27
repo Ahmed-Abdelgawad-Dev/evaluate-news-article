@@ -25,6 +25,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: './src/client/views/index.html', filename: './index.html'
         }),
+        //service worker plugin
         new WorkboxPlugin.GenerateSW(),
         new CleanWebpackPlugin({
             dry: true,
