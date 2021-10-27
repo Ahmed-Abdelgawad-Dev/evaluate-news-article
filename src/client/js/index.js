@@ -1,4 +1,4 @@
-import checkURL from "./checkURL";
+import checkURL from "./validatingURL";
 
 
 async function fetchingData (url='', data={url:''}) {
@@ -32,15 +32,15 @@ export default async function handleSubmit (e) {
 
 
 const useData = ({ data }) => {
-    document.getElementById("agreement").innerHTML = `Agreement: ${data.agreement}`;
+    document.getElementById("agreement").innerHTML = `Agreement Type: ${data.agreement.toLowerCase()}`;
 
-    document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.subjectivity}`;
+    document.getElementById("subjectivity").innerHTML = `Subjectivity Ego: ${data.subjectivity}`;
 
-    document.getElementById("confidence").innerHTML = `Confidence: ${data.confidence}`;
+    document.getElementById("confidence").innerHTML = `Confidence Degree: ${data.confidence}`;
 
-    document.getElementById("irony").innerHTML = `Irony: ${data.irony}`;
+    document.getElementById("irony").innerHTML = `Irony Type: ${data.irony}`;
 
-    document.getElementById("score_tag").innerHTML = `Score Tag: ${data.score_tag}`;
+    document.getElementById("score_tag").innerHTML = `Score Tag: ${data.score_tag.toLowerCase()}`;
   }
 
 

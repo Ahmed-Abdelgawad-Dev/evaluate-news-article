@@ -1,4 +1,4 @@
-import checkURL from "../src/client/js/checkURL";
+import checkURL from "../src/client/js/validatingURL";
 
 test('checkURL REGEX existence test', () => {
   expect(checkURL('www.yahoo.com')).toBeDefined();
