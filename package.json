@@ -17,6 +17,7 @@
   "description": "Evaluating Article App using MeaningCloud API",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.15.4",
     "@jest/globals": "^27.3.1",
     "axios": "^0.21.1",
     "babel-core": "^7.0.0-bridge.0",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.13.10",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
